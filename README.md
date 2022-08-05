@@ -32,7 +32,7 @@ First parameter accepts some player or group of players. This is when selectors 
 The way I make this in my plugins is next:  
 1. I create some dictionary, which contains player id as a key, and string (the tag itself) as a value. When player joins, I add him to the dictionary with default null tag.
 2. In OnEnable() method I create singleton instance of PlayerSelector class, and provide to its constructor lambda expression, e.g.:  
-```
+```c#
 (targets, tag) =>
 {
   List<Smod2.API.Player> output = new List<Smod2.API.Player>();
