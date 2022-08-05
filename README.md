@@ -20,6 +20,7 @@ First parameter accepts some player or group of players. This is when selectors 
 **sethp team(\*,3) 69** - *From all (\*) players selects players with team id 3, and sets their HP to 69.*  
 **sethp rand(\*,5) 69** - *From all (\*) players selects 5 random players, and sets their HP to 69.*  
 **sethp tag(\*,murder) 69** - *From all (\*) players selects players with tag "murder", and sets their HP to 69.*  
+**sethp rank(\*,admin) 69** - *From all (\*) players selects players with rank/group "admin" (which takes from config_remoteadmin.txt AFAIK), and sets their HP to 69.*  
 **sethp rand(role(\*,1),3) 69** - *From all (\*) players selects players with role id 1, then from these (role(\*,1)) players selects 3 random players, and sets their HP to 69.*  
 **sethp rand(tag(team(\*,1),gigachad),1) 69** - *From all (\*) players selects players with team id 1, then from these (team(\*,1)) players selects players with tag "gigachad", then from these (tag(team(\*,1),gigachad)) players selects 1 random player, and sets his HP to 69.*  
 # How can I use this in my plugin?
